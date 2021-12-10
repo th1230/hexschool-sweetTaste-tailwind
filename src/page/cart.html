@@ -6,5 +6,666 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>甜點店商</title>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <nav id="navbar" class="h-24 w-full duration-300">
+        <div
+          class="
+            max-w-5xl
+            flex
+            justify-between
+            items-center
+            h-full
+            m-auto
+            py-7
+            lg:px-[2.625rem]
+          "
+        >
+          <div class="md:hidden h-10 px-7 flex items-center">
+            <div id="openbtn" class="show h-[24px] cursor-pointer">
+              <span class="material-icons">menu</span>
+            </div>
+            <div id="closebtn" class="close h-[24px] cursor-pointer">
+              <span class="material-icons"> close </span>
+            </div>
+          </div>
+
+          <a href="index.html">
+            <img
+              class="h-full md:block hidden"
+              src="../assets/img/logo/logo-all-dark.svg"
+              width="220px"
+              alt=""
+            />
+            <img
+              class="h-full md:hidden block"
+              src="../assets/img/logo/logotype-sm-dark.svg"
+              width="115px"
+              alt=""
+            />
+          </a>
+
+          <ul
+            id="navlist"
+            class="
+              w-0
+              fixed
+              right-0
+              top-0
+              h-full
+              bg-black bg-opacity-20
+              flex-1 flex flex-col
+              justify-start
+              items-center
+              duration-200
+              opacity-0
+              z-20
+              md:opacity-100
+              md:justify-end
+              md:flex
+              md:relative
+              md:bg-transparent
+              md:flex-row
+            "
+          >
+            <li
+              class="
+                py-4
+                md:py-0 md:px-7
+                h-full
+                w-full
+                md:w-auto md:text-cgreen
+                text-white
+                cursor-pointer
+                flex
+                items-center
+                duration-300
+                hover:bg-cgreen-dark hover:text-white
+              "
+            >
+              <a
+                class="
+                  block
+                  w-full
+                  h-full
+                  flex
+                  justify-center
+                  items-center
+                  md:text-base
+                  text-3xl
+                "
+                href="index.html"
+                >首頁</a
+              >
+            </li>
+            <li
+              class="
+                py-4
+                md:py-0 md:px-7
+                h-full
+                w-full
+                md:w-auto md:text-cgreen
+                text-white
+                cursor-pointer
+                flex
+                items-center
+                duration-300
+                hover:bg-cgreen-dark hover:text-white
+              "
+            >
+              <a
+                class="
+                  block
+                  w-full
+                  h-full
+                  flex
+                  justify-center
+                  items-center
+                  md:text-base
+                  text-3xl
+                "
+                href="product.html"
+                >甜點</a
+              >
+            </li>
+            <li
+              class="
+                py-4
+                md:py-0 md:px-7
+                h-full
+                w-full
+                md:w-auto md:text-cgreen
+                text-white
+                cursor-pointer
+                flex
+                items-center
+                duration-300
+                hover:bg-cgreen-dark hover:text-white
+              "
+            >
+              <a
+                class="
+                  block
+                  w-full
+                  h-full
+                  flex
+                  justify-center
+                  items-center
+                  md:text-base
+                  text-3xl
+                "
+                href="login.html"
+                >登入</a
+              >
+            </li>
+          </ul>
+
+          <div
+            class="
+              flex
+              justify-end
+              h-10
+              px-7
+              items-center
+              hover:bg-cgreen-dark
+              cursor-pointer
+              hover:text-white
+              text-cgreen
+            "
+          >
+            <a class="block w-full h-full flex items-center" href="cart.html">
+              <i class="material-icons">shopping_cart</i>
+            </a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section>
+      <div class="max-w-5xl m-auto lg:px-[2.625rem] flex flex-wrap">
+        <div class="lg:w-8/12 w-full lg:px-2">
+          <h3
+            class="
+              w-full
+              py-4
+              bg-cgreen-lightest
+              text-center text-2xl text-cgreen-light
+            "
+          >
+            您的購物車
+          </h3>
+
+          <ul class="w-full mt-8 px-5 lg:px-0">
+            <li
+              class="
+                flex flex-wrap
+                lg:pb-5
+                mb-5
+                border-b-[1px] border-cgreen-lightest
+              "
+            >
+              <div class="w-6/12 lg:w-3/12 px-2 mb-2">
+                <div
+                  class="
+                    w-full
+                    bg-cover bg-center bg-no-repeat
+                    h-[6.8rem]
+                    min-w-[6.8rem]
+                  "
+                  style="
+                    background-image: url('../assets/img/product/product2.jpg');
+                  "
+                ></div>
+              </div>
+              <div class="w-6/12 px-2 mb-2">
+                <div
+                  class="
+                    w-full
+                    flex flex-col
+                    sm:flex-row
+                    justify-between
+                    h-full
+                  "
+                >
+                  <div
+                    class="
+                      text-cgreen-light
+                      font-light
+                      flex flex-col
+                      justify-center
+                      h-full
+                    "
+                  >
+                    <p class="text-xl">草莓蛋糕</p>
+                    <p>NT$ 777</p>
+                  </div>
+
+                  <div class="flex items-center">
+                    <div
+                      class="
+                        w-12
+                        h-12
+                        flex
+                        items-center
+                        justify-center
+                        border-[1px] border-cgreen-lightest
+                      "
+                    >
+                      -
+                    </div>
+                    <div
+                      class="
+                        w-12
+                        h-12
+                        flex
+                        items-center
+                        justify-center
+                        border-[1px] border-cgreen-lightest
+                      "
+                    >
+                      1
+                    </div>
+                    <div
+                      class="
+                        w-12
+                        h-12
+                        flex
+                        items-center
+                        justify-center
+                        border-[1px] border-cgreen-lightest
+                      "
+                    >
+                      +
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="
+                  w-full
+                  lg:w-3/12
+                  px-2
+                  lg:py-0
+                  py-3
+                  flex
+                  items-center
+                  lg:border-0
+                  border-t-[1px] border-cgreen-lightest
+                "
+              >
+                <div class="flex justify-end lg:justify-between w-full">
+                  <div class="text-xl text-cgreen-light">NT$ 777</div>
+                  <div class="lg:block hidden flex items-center justify-center">
+                    <i class="material-icons text-cgreen">delete_outline</i>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li
+              class="
+                flex flex-wrap
+                lg:pb-5
+                mb-5
+                border-b-[1px] border-cgreen-lightest
+              "
+            >
+              <div class="w-6/12 lg:w-3/12 px-2 mb-2">
+                <div
+                  class="
+                    w-full
+                    bg-cover bg-center bg-no-repeat
+                    h-[6.8rem]
+                    min-w-[6.8rem]
+                  "
+                  style="
+                    background-image: url('../assets/img/product/product8.jpg');
+                  "
+                ></div>
+              </div>
+              <div class="w-6/12 px-2 mb-2">
+                <div
+                  class="
+                    w-full
+                    flex flex-col
+                    sm:flex-row
+                    justify-between
+                    h-full
+                  "
+                >
+                  <div
+                    class="
+                      text-cgreen-light
+                      font-light
+                      flex flex-col
+                      justify-center
+                      h-full
+                    "
+                  >
+                    <p class="text-xl">草莓牛奶蛋糕</p>
+                    <p>NT$ 150</p>
+                  </div>
+
+                  <div class="flex items-center">
+                    <div
+                      class="
+                        w-12
+                        h-12
+                        flex
+                        items-center
+                        justify-center
+                        border-[1px] border-cgreen-lightest
+                      "
+                    >
+                      -
+                    </div>
+                    <div
+                      class="
+                        w-12
+                        h-12
+                        flex
+                        items-center
+                        justify-center
+                        border-[1px] border-cgreen-lightest
+                      "
+                    >
+                      1
+                    </div>
+                    <div
+                      class="
+                        w-12
+                        h-12
+                        flex
+                        items-center
+                        justify-center
+                        border-[1px] border-cgreen-lightest
+                      "
+                    >
+                      +
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="
+                  w-full
+                  lg:w-3/12
+                  px-2
+                  lg:py-0
+                  py-3
+                  flex
+                  items-center
+                  lg:border-0
+                  border-t-[1px] border-cgreen-lightest
+                "
+              >
+                <div class="flex justify-end lg:justify-between w-full">
+                  <div class="text-xl text-cgreen-light">NT$ 150</div>
+                  <div class="lg:block hidden flex items-center justify-center">
+                    <i class="material-icons text-cgreen">delete_outline</i>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li
+              class="
+                flex flex-wrap
+                lg:pb-5
+                mb-5
+                border-b-[1px] border-cgreen-lightest
+              "
+            >
+              <div class="w-6/12 lg:w-3/12 px-2 mb-2">
+                <div
+                  class="
+                    w-full
+                    bg-cover bg-center bg-no-repeat
+                    h-[6.8rem]
+                    min-w-[6.8rem]
+                  "
+                  style="
+                    background-image: url('../assets/img/product/product3.jpg');
+                  "
+                ></div>
+              </div>
+              <div class="w-6/12 px-2 mb-2">
+                <div
+                  class="
+                    w-full
+                    flex flex-col
+                    sm:flex-row
+                    justify-between
+                    h-full
+                  "
+                >
+                  <div
+                    class="
+                      text-cgreen-light
+                      font-light
+                      flex flex-col
+                      justify-center
+                      h-full
+                    "
+                  >
+                    <p class="text-xl">藍莓百香果優葛</p>
+                    <p>NT$ 70</p>
+                  </div>
+
+                  <div class="flex items-center">
+                    <div
+                      class="
+                        w-12
+                        h-12
+                        flex
+                        items-center
+                        justify-center
+                        border-[1px] border-cgreen-lightest
+                      "
+                    >
+                      -
+                    </div>
+                    <div
+                      class="
+                        w-12
+                        h-12
+                        flex
+                        items-center
+                        justify-center
+                        border-[1px] border-cgreen-lightest
+                      "
+                    >
+                      1
+                    </div>
+                    <div
+                      class="
+                        w-12
+                        h-12
+                        flex
+                        items-center
+                        justify-center
+                        border-[1px] border-cgreen-lightest
+                      "
+                    >
+                      +
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="
+                  w-full
+                  lg:w-3/12
+                  px-2
+                  lg:py-0
+                  py-3
+                  flex
+                  items-center
+                  lg:border-0
+                  border-t-[1px] border-cgreen-lightest
+                "
+              >
+                <div class="flex justify-end lg:justify-between w-full">
+                  <div class="text-xl text-cgreen-light">NT$ 70</div>
+                  <div class="lg:block hidden flex items-center justify-center">
+                    <i class="material-icons text-cgreen">delete_outline</i>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="lg:w-4/12 w-full lg:px-2">
+          <form class="bg-cgreen px-4 text-white" action="">
+            <div class="bg-cgreen w-full lg:block hidden">
+              <h2 class="text-center py-4 text-white text-[2rem]">會員登入</h2>
+            </div>
+            <div class="py-4 border-t-[2px] border-cgreen-light">
+              <p class="mt-[0.5rem] text-base font-thin flex justify-between">
+                小計<span>NT$ 997</span>
+              </p>
+              <p class="mt-[0.5rem] text-base font-thin flex justify-between">
+                運費<span>NT$ 100</span>
+              </p>
+              <p class="mt-[0.5rem] text-xl flex justify-between">
+                總計<span>NT$ 1097</span>
+              </p>
+            </div>
+          </form>
+          <button class="w-full h-16 bg-cyellow text-cgreen text-2xl">
+            <a href="checkout-1.html">結帳</a>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="bg-cgreen-dark">
+        <div class="max-w-5xl p-[1.875rem] lg:px-10 m-auto">
+          <div class="flex justify-between flex-wrap w-full">
+            <div
+              class="
+                md:w-5/12
+                mb-[1.875rem]
+                md:mb-0
+                w-full
+                flex
+                justify-center
+                items-center
+              "
+            >
+              <img
+                class="mr-5"
+                style="width: 40px"
+                src="assets/img/logo/logo-light.svg"
+                alt=""
+              />
+              <p class="text-white text-2xl">訂閱你我們甜蜜郵件</p>
+            </div>
+            <div class="md:w-5/12 w-full">
+              <div class="h-[3.375rem] bg-cwhite flex">
+                <i
+                  class="
+                    text-cgreen
+                    w-[3.375rem]
+                    flex
+                    items-center
+                    justify-center
+                    material-icons
+                  "
+                  >email</i
+                >
+                <input
+                  class="
+                    flex flex-1
+                    w-[6.25rem]
+                    h-full
+                    bg-cwhite
+                    text-cgreen
+                    font-light
+                    outline-none
+                  "
+                  id="email"
+                  type="email"
+                  name="email"
+                />
+                <button
+                  class="
+                    bg-cyellow
+                    w-[3.375rem]
+                    flex
+                    items-center
+                    justify-center
+                  "
+                >
+                  <i class="text-cgreen material-icons">arrow_forward</i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bg-cwhite w-full py-[1.875rem]">
+        <div class="lg:px-10 px-[1.875rem]">
+          <div class="w-full flex justify-center mb-[1.875rem]">
+            <div class="w-full md:w-5/12 flex flex-col justify-between">
+              <a class="mb-10" href="index.html">
+                <img src="assets/img/logo/logotype.svg" width="172px" alt="" />
+              </a>
+
+              <ul class="w-full text-cgreen font-normal">
+                <li>07-1234-5678</li>
+                <li>sweetaste@email.com</li>
+                <li>800 高雄市新興區幸福路 520 號</li>
+              </ul>
+            </div>
+            <div class="hidden md:w-5/12 md:block">
+              <div
+                class="
+                  ml-auto
+                  text-direct-col text-orient-upright text-2xl text-cgreen
+                  font-bold
+                  tracking-widest1
+                  mt-[-0.5rem]
+                "
+              >
+                今天是個<span class="tracking-normal">||</span>
+                <span class="mt-4 block leading-loose">吃甜點的好日子。</span>
+              </div>
+            </div>
+          </div>
+          <div class="w-full flex justify-center items-end flex-wrap">
+            <div class="w-full md:w-5/12 mb-5 md:mb-0">
+              <div class="flex">
+                <a href="#">
+                  <img
+                    class="mr-2"
+                    src="assets/img/icon/ic-line@.svg"
+                    width="32"
+                    alt=""
+                  />
+                </a>
+                <a href="#">
+                  <img
+                    class="mr-2"
+                    src="assets/img/icon/ic-facebook.svg"
+                    width="32"
+                    alt=""
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="w-full md:w-5/12">
+              <div class="flex md:justify-end justify-start">
+                <p class="md:text-right text-cgreen">
+                  © 2021 Sweetaste* All Rights Reserved <br />
+                  <span class="text-xs">Thomas tailwindcss/切版練習</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>

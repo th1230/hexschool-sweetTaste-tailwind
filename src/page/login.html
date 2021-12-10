@@ -6,5 +6,456 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>甜點店商</title>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <nav id="navbar" class="h-24 w-full duration-300">
+        <div
+          class="
+            max-w-5xl
+            flex
+            justify-between
+            items-center
+            h-full
+            m-auto
+            py-7
+            lg:px-[2.625rem]
+          "
+        >
+          <div class="md:hidden h-10 px-7 flex items-center">
+            <div id="openbtn" class="show h-[24px] cursor-pointer">
+              <span class="material-icons">menu</span>
+            </div>
+            <div id="closebtn" class="close h-[24px] cursor-pointer">
+              <span class="material-icons"> close </span>
+            </div>
+          </div>
+
+          <a href="index.html">
+            <img
+              class="h-full md:block hidden"
+              src="../assets/img/logo/logo-all-dark.svg"
+              width="220px"
+              alt=""
+            />
+            <img
+              class="h-full md:hidden block"
+              src="../assets/img/logo/logotype-sm-dark.svg"
+              width="115px"
+              alt=""
+            />
+          </a>
+
+          <ul
+            id="navlist"
+            class="
+              w-0
+              fixed
+              right-0
+              top-0
+              h-full
+              bg-black bg-opacity-20
+              flex-1 flex flex-col
+              justify-start
+              items-center
+              duration-200
+              opacity-0
+              z-20
+              md:opacity-100
+              md:justify-end
+              md:flex
+              md:relative
+              md:bg-transparent
+              md:flex-row
+            "
+          >
+            <li
+              class="
+                py-4
+                md:py-0 md:px-7
+                h-full
+                w-full
+                md:w-auto md:text-cgreen
+                text-white
+                cursor-pointer
+                flex
+                items-center
+                duration-300
+                hover:bg-cgreen-dark hover:text-white
+              "
+            >
+              <a
+                class="
+                  block
+                  w-full
+                  h-full
+                  flex
+                  justify-center
+                  items-center
+                  md:text-base
+                  text-3xl
+                "
+                href="index.html"
+                >首頁</a
+              >
+            </li>
+            <li
+              class="
+                py-4
+                md:py-0 md:px-7
+                h-full
+                w-full
+                md:w-auto md:text-cgreen
+                text-white
+                cursor-pointer
+                flex
+                items-center
+                duration-300
+                hover:bg-cgreen-dark hover:text-white
+              "
+            >
+              <a
+                class="
+                  block
+                  w-full
+                  h-full
+                  flex
+                  justify-center
+                  items-center
+                  md:text-base
+                  text-3xl
+                "
+                href="product.html"
+                >甜點</a
+              >
+            </li>
+            <li
+              class="
+                py-4
+                md:py-0 md:px-7
+                h-full
+                w-full
+                md:w-auto md:text-cgreen
+                text-white
+                cursor-pointer
+                flex
+                items-center
+                duration-300
+                hover:bg-cgreen-dark hover:text-white
+              "
+            >
+              <a
+                class="
+                  block
+                  w-full
+                  h-full
+                  flex
+                  justify-center
+                  items-center
+                  md:text-base
+                  text-3xl
+                "
+                href="login.html"
+                >登入</a
+              >
+            </li>
+          </ul>
+
+          <div
+            class="
+              flex
+              justify-end
+              h-10
+              px-7
+              items-center
+              hover:bg-cgreen-dark
+              cursor-pointer
+              hover:text-white
+              text-cgreen
+            "
+          >
+            <a class="block w-full h-full flex items-center" href="cart.html">
+              <i class="material-icons">shopping_cart</i>
+            </a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section class="lg:mb-[3.75rem]">
+      <div class="max-w-5xl m-auto lg:px-[2.625rem]">
+        <div
+          class="
+            w-full
+            flex
+            justify-center
+            items-center
+            flex-row-reverse flex-wrap
+            items-stretch
+          "
+        >
+          <div class="bg-cgreen w-full lg:hidden block">
+            <h2 class="text-center py-1.8 text-white text-[2rem]">會員登入</h2>
+          </div>
+          <div
+            class="
+              lg:w-5/12
+              w-full
+              lg:my-4
+              bg-cgreen-lightest
+              p-1.8
+              flex
+              lg:flex-col lg:justify-between lg:items-center
+              items-stretch
+            "
+          >
+            <h3
+              class="
+                lg:block
+                hidden
+                text-2xl
+                font-light
+                text-cgreen-light
+                login-title
+                relative
+              "
+            >
+              連結社群帳號
+            </h3>
+            <a
+              class="
+                w-full
+                flex
+                justify-center
+                items-center
+                p-4
+                border-r-[1px] border-cgreen-lightest
+                bg-white
+              "
+              ><img
+                class="max-w-full h-auto"
+                width="108px"
+                src="assets/img/icon/facebook.svg"
+                alt=""
+            /></a>
+            <a class="w-full flex justify-center items-center p-4 bg-white"
+              ><img
+                class="max-w-full h-auto"
+                width="94px"
+                src="assets/img/icon/google.svg"
+                alt=""
+            /></a>
+            <a
+              class="
+                w-full
+                flex
+                justify-center
+                items-center
+                p-4
+                border-l-[1px] border-cgreen-lightest
+                bg-white
+              "
+              ><img
+                class="max-w-full h-auto"
+                width="97px"
+                src="assets/img/icon/yahoo.svg"
+                alt=""
+            /></a>
+          </div>
+          <div class="lg:w-5/12 w-full">
+            <form class="m-form" action="">
+              <div class="bg-cgreen w-full lg:block hidden">
+                <h2 class="text-center py-1.8 text-white text-[2rem]">
+                  會員登入
+                </h2>
+              </div>
+              <div class="w-full bg-cgreen pt-1.8 lg:pt-0 px-1.8 pb-5">
+                <div class="bg-cgreen-lightest flex mb-4">
+                  <i
+                    class="
+                      h-[3.375rem]
+                      w-[3.375rem]
+                      flex
+                      justify-center
+                      items-center
+                      material-icons
+                    "
+                    >person</i
+                  >
+                  <input
+                    class="flex-1 bg-cgreen-lightest outline-none"
+                    id="email"
+                    type="text"
+                    name="email"
+                    placeholder="電子信箱/手機號碼"
+                  />
+                </div>
+                <div class="bg-cgreen-lightest flex mb-4">
+                  <i
+                    class="
+                      h-[3.375rem]
+                      w-[3.375rem]
+                      flex
+                      justify-center
+                      items-center
+                      material-icons
+                    "
+                    >vpn_key</i
+                  >
+                  <input
+                    class="flex-1 bg-cgreen-lightest outline-none"
+                    id="password"
+                    type="password"
+                    name="password"
+                    placeholder="請輸入使用者密碼"
+                  />
+                </div>
+                <div class="flex items-center text-white">
+                  <input
+                    class="hidden"
+                    id="remember"
+                    type="checkbox"
+                    name="rememberMe"
+                  />
+                  <label class="w-4 h-4 mr-1 relative" for="remember"></label
+                  >記住我
+                </div>
+              </div>
+              <button class="w-full h-16 bg-cyellow text-cgreen text-2xl">
+                登入帳號
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="bg-cgreen-dark">
+        <div class="max-w-5xl p-[1.875rem] lg:px-10 m-auto">
+          <div class="flex justify-between flex-wrap w-full">
+            <div
+              class="
+                md:w-5/12
+                mb-[1.875rem]
+                md:mb-0
+                w-full
+                flex
+                justify-center
+                items-center
+              "
+            >
+              <img
+                class="mr-5"
+                style="width: 40px"
+                src="assets/img/logo/logo-light.svg"
+                alt=""
+              />
+              <p class="text-white text-2xl">訂閱你我們甜蜜郵件</p>
+            </div>
+            <div class="md:w-5/12 w-full">
+              <div class="h-[3.375rem] bg-cwhite flex">
+                <i
+                  class="
+                    text-cgreen
+                    w-[3.375rem]
+                    flex
+                    items-center
+                    justify-center
+                    material-icons
+                  "
+                  >email</i
+                >
+                <input
+                  class="
+                    flex flex-1
+                    w-[6.25rem]
+                    h-full
+                    bg-cwhite
+                    text-cgreen
+                    font-light
+                    outline-none
+                  "
+                  id="email"
+                  type="email"
+                  name="email"
+                />
+                <button
+                  class="
+                    bg-cyellow
+                    w-[3.375rem]
+                    flex
+                    items-center
+                    justify-center
+                  "
+                >
+                  <i class="text-cgreen material-icons">arrow_forward</i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bg-cwhite w-full py-[1.875rem]">
+        <div class="lg:px-10 px-[1.875rem]">
+          <div class="w-full flex justify-center mb-[1.875rem]">
+            <div class="w-full md:w-5/12 flex flex-col justify-between">
+              <a class="mb-10" href="index.html">
+                <img src="assets/img/logo/logotype.svg" width="172px" alt="" />
+              </a>
+
+              <ul class="w-full text-cgreen font-normal">
+                <li>07-1234-5678</li>
+                <li>sweetaste@email.com</li>
+                <li>800 高雄市新興區幸福路 520 號</li>
+              </ul>
+            </div>
+            <div class="hidden md:w-5/12 md:block">
+              <div
+                class="
+                  ml-auto
+                  text-direct-col text-orient-upright text-2xl text-cgreen
+                  font-bold
+                  tracking-widest1
+                  mt-[-0.5rem]
+                "
+              >
+                今天是個<span class="tracking-normal">||</span>
+                <span class="mt-4 block leading-loose">吃甜點的好日子。</span>
+              </div>
+            </div>
+          </div>
+          <div class="w-full flex justify-center items-end flex-wrap">
+            <div class="w-full md:w-5/12 mb-5 md:mb-0">
+              <div class="flex">
+                <a href="#">
+                  <img
+                    class="mr-2"
+                    src="assets/img/icon/ic-line@.svg"
+                    width="32"
+                    alt=""
+                  />
+                </a>
+                <a href="#">
+                  <img
+                    class="mr-2"
+                    src="assets/img/icon/ic-facebook.svg"
+                    width="32"
+                    alt=""
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="w-full md:w-5/12">
+              <div class="flex md:justify-end justify-start">
+                <p class="md:text-right text-cgreen">
+                  © 2021 Sweetaste* All Rights Reserved <br />
+                  <span class="text-xs">Thomas tailwindcss/切版練習</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>

@@ -20,6 +20,7 @@
     "css-loader": "^5.2.6",
     "file-loader": "^6.2.0",
     "html-webpack-plugin": "^5.3.1",
+    "image-webpack-loader": "^8.0.1",
     "jquery": "^3.6.0",
     "mini-css-extract-plugin": "^1.6.0",
     "postcss": "^8.3.5",
@@ -31,5 +32,8 @@
     "webpack": "^5.39.1",
     "webpack-cli": "^4.7.2",
     "webpack-dev-server": "^3.11.2"
+  },
+  "dependencies": {
+    "optimize-css-assets-webpack-plugin": "^6.0.1"
   }
 }

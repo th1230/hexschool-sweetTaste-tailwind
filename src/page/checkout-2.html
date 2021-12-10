@@ -6,5 +6,625 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>甜點店商</title>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <nav id="navbar" class="h-24 w-full duration-300">
+        <div
+          class="
+            max-w-5xl
+            flex
+            justify-between
+            items-center
+            h-full
+            m-auto
+            py-7
+            lg:px-[2.625rem]
+          "
+        >
+          <div class="md:hidden h-10 px-7 flex items-center">
+            <div id="openbtn" class="show h-[24px] cursor-pointer">
+              <span class="material-icons">menu</span>
+            </div>
+            <div id="closebtn" class="close h-[24px] cursor-pointer">
+              <span class="material-icons"> close </span>
+            </div>
+          </div>
+
+          <a href="index.html">
+            <img
+              class="h-full md:block hidden"
+              src="../assets/img/logo/logo-all-dark.svg"
+              width="220px"
+              alt=""
+            />
+            <img
+              class="h-full md:hidden block"
+              src="../assets/img/logo/logotype-sm-dark.svg"
+              width="115px"
+              alt=""
+            />
+          </a>
+
+          <ul
+            id="navlist"
+            class="
+              w-0
+              fixed
+              right-0
+              top-0
+              h-full
+              bg-black bg-opacity-20
+              flex-1 flex flex-col
+              justify-start
+              items-center
+              duration-200
+              opacity-0
+              z-20
+              md:opacity-100
+              md:justify-end
+              md:flex
+              md:relative
+              md:bg-transparent
+              md:flex-row
+            "
+          >
+            <li
+              class="
+                py-4
+                md:py-0 md:px-7
+                h-full
+                w-full
+                md:w-auto md:text-cgreen
+                text-white
+                cursor-pointer
+                flex
+                items-center
+                duration-300
+                hover:bg-cgreen-dark hover:text-white
+              "
+            >
+              <a
+                class="
+                  block
+                  w-full
+                  h-full
+                  flex
+                  justify-center
+                  items-center
+                  md:text-base
+                  text-3xl
+                "
+                href="index.html"
+                >首頁</a
+              >
+            </li>
+            <li
+              class="
+                py-4
+                md:py-0 md:px-7
+                h-full
+                w-full
+                md:w-auto md:text-cgreen
+                text-white
+                cursor-pointer
+                flex
+                items-center
+                duration-300
+                hover:bg-cgreen-dark hover:text-white
+              "
+            >
+              <a
+                class="
+                  block
+                  w-full
+                  h-full
+                  flex
+                  justify-center
+                  items-center
+                  md:text-base
+                  text-3xl
+                "
+                href="product.html"
+                >甜點</a
+              >
+            </li>
+            <li
+              class="
+                py-4
+                md:py-0 md:px-7
+                h-full
+                w-full
+                md:w-auto md:text-cgreen
+                text-white
+                cursor-pointer
+                flex
+                items-center
+                duration-300
+                hover:bg-cgreen-dark hover:text-white
+              "
+            >
+              <a
+                class="
+                  block
+                  w-full
+                  h-full
+                  flex
+                  justify-center
+                  items-center
+                  md:text-base
+                  text-3xl
+                "
+                href="login.html"
+                >登入</a
+              >
+            </li>
+          </ul>
+
+          <div
+            class="
+              flex
+              justify-end
+              h-10
+              px-7
+              items-center
+              hover:bg-cgreen-dark
+              cursor-pointer
+              hover:text-white
+              text-cgreen
+            "
+          >
+            <a class="block w-full h-full flex items-center" href="cart.html">
+              <i class="material-icons">shopping_cart</i>
+            </a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section class="lg:mb-[3.75rem]">
+      <div
+        class="max-w-5xl m-auto lg:px-[2.625rem] flex flex-wrap justify-center"
+      >
+        <div class="w-full lg:w-6/12 lg:px-2">
+          <form class="bg-cgreen text-white" action="">
+            <div class="p-1.8">
+              <div class="w-full flex">
+                <div class="w-1/2">
+                  <h3 class="text-4xl">付款</h3>
+                </div>
+                <div class="w-1/2">
+                  <ul
+                    class="
+                      progressbar
+                      flex
+                      h-f
+                      justify-between
+                      items-center
+                      relative
+                    "
+                  >
+                    <li
+                      class="
+                        progressComplete
+                        w-[20px]
+                        h-[20px]
+                        rounded-full
+                        bg-cgreen
+                        border-2 border-cwhite
+                        block
+                        relative
+                      "
+                    >
+                      <i
+                        class="
+                          absolute
+                          text-xs
+                          top-2/4
+                          left-2/4
+                          translate-x-[-50%] translate-y-[-50%]
+                          text-cgreen
+                          material-icons
+                        "
+                        >done</i
+                      >
+                    </li>
+                    <li
+                      class="
+                        progressStep
+                        w-[20px]
+                        h-[20px]
+                        rounded-full
+                        bg-cgreen
+                        border-2 border-cwhite
+                        relative
+                      "
+                    >
+                      <i
+                        class="
+                          absolute
+                          text-xs
+                          top-2/4
+                          left-2/4
+                          translate-x-[-50%] translate-y-[-50%]
+                          text-cgreen
+                          material-icons
+                          hidden
+                        "
+                        >done</i
+                      >
+                    </li>
+                    <li
+                      class="
+                        w-[20px]
+                        h-[20px]
+                        rounded-full
+                        bg-cgreen
+                        border-2 border-cwhite
+                        relative
+                      "
+                    >
+                      <i
+                        class="
+                          absolute
+                          text-xs
+                          top-2/4
+                          left-2/4
+                          translate-x-[-50%] translate-y-[-50%]
+                          text-cgreen
+                          material-icons
+                          hidden
+                        "
+                        >done</i
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="p-1.8 pt-0">
+              <div class="w-full flex flex-wrap">
+                <div class="w-full mb-2 px-1">
+                  <label class="block text-xl text-cwhite mb-2"
+                    >信用卡卡號</label
+                  >
+                  <div class="flex">
+                    <input
+                      class="w-full py-4 px-5 flex-1 bg-cgreen-lightest"
+                      type="phone"
+                      name="phone"
+                      placeholder="9012-3456-7890-1234"
+                    />
+                    <i
+                      class="
+                        w-[3.75rem]
+                        h-[3.75rem]
+                        flex
+                        items-center
+                        justify-center
+                        material-icons
+                        text-cgreen
+                        bg-cwhite
+                      "
+                      >credit_card</i
+                    >
+                  </div>
+                </div>
+                <div class="w-full mb-2 px-1">
+                  <label class="block text-xl text-cwhite mb-2"
+                    >持卡人姓名</label
+                  >
+                  <div class="w-full flex">
+                    <input
+                      class="w-1/2 mr-1 py-4 px-5 bg-cgreen-lightest"
+                      type="text"
+                      name="lastname"
+                      placeholder="王"
+                    />
+                    <input
+                      class="w-1/2 ml-1 py-4 px-5 bg-cgreen-lightest"
+                      type="text"
+                      name="firstname"
+                      placeholder="小王"
+                    />
+                  </div>
+                </div>
+
+                <div class="w-full mb-2 px-1">
+                  <label class="block text-xl text-cwhite mb-2">有效期限</label>
+                  <div class="w-full flex">
+                    <select
+                      class="
+                        w-full
+                        py-4
+                        px-5
+                        mr-1
+                        bg-cgreen-lightest
+                        text-cgreen
+                        font-light
+                      "
+                      name="month"
+                    >
+                      <option value="一月">一月</option>
+                      <option value="二月">二月</option>
+                      <option value="三月">三月</option>
+                      <option value="四月">四月</option>
+                      <option value="五月">五月</option>
+                    </select>
+                    <select
+                      class="
+                        w-full
+                        py-4
+                        px-5
+                        ml-1
+                        bg-cgreen-lightest
+                        text-cgreen
+                        font-light
+                      "
+                      name="year"
+                    >
+                      <option value="2022">2022</option>
+                      <option value="2023">2023</option>
+                      <option value="2024">2024</option>
+                      <option value="2025">2025</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="w-1/2 mb-2 px-1">
+                  <label class="block text-xl text-cwhite mb-2"
+                    >背後末三碼</label
+                  >
+                  <input
+                    class="w-full py-4 px-5 bg-cgreen-lightest"
+                    type="text"
+                    name="address"
+                    placeholder="123"
+                  />
+                </div>
+              </div>
+            </div>
+          </form>
+          <button class="w-full h-16 bg-cyellow text-cgreen text-2xl">
+            <a href="checkout-3.html">下一步</a>
+          </button>
+        </div>
+        <div class="hidden lg:block lg:w-4/12 lg:px-2">
+          <div class="flex flex-col">
+            <div class="w-full border-[1px] border-cgreen-lightest mb-5">
+              <div
+                class="
+                  flex
+                  items-center
+                  justify-center
+                  py-4
+                  bg-cgreen-lightest
+                  text-cgreen-light
+                "
+              >
+                <p class="text-2xl">訂單摘要</p>
+              </div>
+
+              <div class="p-4">
+                <p
+                  class="mt-2 flex justify-between text-cgreen-light font-light"
+                >
+                  小計<span>NT$ 997</span>
+                </p>
+                <p
+                  class="mt-2 flex justify-between text-cgreen-light font-light"
+                >
+                  運費<span>NT$ 100</span>
+                </p>
+                <p class="mt-2 flex justify-between text-cgreen-light text-xl">
+                  總計<span>NT$ 1097</span>
+                </p>
+              </div>
+            </div>
+            <div class="w-full border-[1px] border-cgreen-lightest">
+              <div
+                class="
+                  flex
+                  items-center
+                  justify-center
+                  py-4
+                  bg-cgreen-lightest
+                  text-cgreen-light
+                "
+              >
+                <p class="text-2xl">購物清單</p>
+              </div>
+
+              <div class="p-2 flex flex-col flex-wrap px-1">
+                <div class="flex w-full">
+                  <div class="w-1/2 p-1">
+                    <div
+                      class="h-20 min-w-20 bg-center bg-cover bg-no-repeat"
+                      style="
+                        background-image: url('assets/img/product/product2.jpg');
+                      "
+                    ></div>
+                  </div>
+                  <div class="w-1/2 py-2 px-4">
+                    <div class="flex flex-col h-full justify-center">
+                      <p class="text-cgreen-light font-light">
+                        草莓牛奶湯<span>(1)</span>
+                      </p>
+                      <p class="text-cgreen-light text-xl">NT$ 777</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="flex w-full">
+                  <div class="w-1/2 p-1">
+                    <div
+                      class="h-20 min-w-20 bg-center bg-cover bg-no-repeat"
+                      style="
+                        background-image: url('assets/img/product/product8.jpg');
+                      "
+                    ></div>
+                  </div>
+                  <div class="w-1/2 py-2 px-4">
+                    <div class="flex flex-col h-full justify-center">
+                      <p class="text-cgreen-light font-light">
+                        草莓牛奶蛋糕<span>(1)</span>
+                      </p>
+                      <p class="text-cgreen-light text-xl">NT$ 150</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="flex w-full">
+                  <div class="w-1/2 p-1">
+                    <div
+                      class="h-20 min-w-20 bg-center bg-cover bg-no-repeat"
+                      style="
+                        background-image: url('assets/img/product/product3.jpg');
+                      "
+                    ></div>
+                  </div>
+                  <div class="w-1/2 py-2 px-4">
+                    <div class="flex flex-col h-full justify-center">
+                      <p class="text-cgreen-light font-light">
+                        藍莓百香果優葛<span>(1)</span>
+                      </p>
+                      <p class="text-cgreen-light text-xl">NT$ 70</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="bg-cgreen-dark">
+        <div class="max-w-5xl p-[1.875rem] lg:px-10 m-auto">
+          <div class="flex justify-between flex-wrap w-full">
+            <div
+              class="
+                md:w-5/12
+                mb-[1.875rem]
+                md:mb-0
+                w-full
+                flex
+                justify-center
+                items-center
+              "
+            >
+              <img
+                class="mr-5"
+                style="width: 40px"
+                src="assets/img/logo/logo-light.svg"
+                alt=""
+              />
+              <p class="text-white text-2xl">訂閱你我們甜蜜郵件</p>
+            </div>
+            <div class="md:w-5/12 w-full">
+              <div class="h-[3.375rem] bg-cwhite flex">
+                <i
+                  class="
+                    text-cgreen
+                    w-[3.375rem]
+                    flex
+                    items-center
+                    justify-center
+                    material-icons
+                  "
+                  >email</i
+                >
+                <input
+                  class="
+                    flex flex-1
+                    w-[6.25rem]
+                    h-full
+                    bg-cwhite
+                    text-cgreen
+                    font-light
+                    outline-none
+                  "
+                  id="email"
+                  type="email"
+                  name="email"
+                />
+                <button
+                  class="
+                    bg-cyellow
+                    w-[3.375rem]
+                    flex
+                    items-center
+                    justify-center
+                  "
+                >
+                  <i class="text-cgreen material-icons">arrow_forward</i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bg-cwhite w-full py-[1.875rem]">
+        <div class="lg:px-10 px-[1.875rem]">
+          <div class="w-full flex justify-center mb-[1.875rem]">
+            <div class="w-full md:w-5/12 flex flex-col justify-between">
+              <a class="mb-10" href="index.html">
+                <img src="assets/img/logo/logotype.svg" width="172px" alt="" />
+              </a>
+
+              <ul class="w-full text-cgreen font-normal">
+                <li>07-1234-5678</li>
+                <li>sweetaste@email.com</li>
+                <li>800 高雄市新興區幸福路 520 號</li>
+              </ul>
+            </div>
+            <div class="hidden md:w-5/12 md:block">
+              <div
+                class="
+                  ml-auto
+                  text-direct-col text-orient-upright text-2xl text-cgreen
+                  font-bold
+                  tracking-widest1
+                  mt-[-0.5rem]
+                "
+              >
+                今天是個<span class="tracking-normal">||</span>
+                <span class="mt-4 block leading-loose">吃甜點的好日子。</span>
+              </div>
+            </div>
+          </div>
+          <div class="w-full flex justify-center items-end flex-wrap">
+            <div class="w-full md:w-5/12 mb-5 md:mb-0">
+              <div class="flex">
+                <a href="#">
+                  <img
+                    class="mr-2"
+                    src="assets/img/icon/ic-line@.svg"
+                    width="32"
+                    alt=""
+                  />
+                </a>
+                <a href="#">
+                  <img
+                    class="mr-2"
+                    src="assets/img/icon/ic-facebook.svg"
+                    width="32"
+                    alt=""
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="w-full md:w-5/12">
+              <div class="flex md:justify-end justify-start">
+                <p class="md:text-right text-cgreen">
+                  © 2021 Sweetaste* All Rights Reserved <br />
+                  <span class="text-xs">Thomas tailwindcss/切版練習</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>

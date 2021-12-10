@@ -3,6 +3,7 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
 const CompressionPlugin = require("compression-webpack-plugin");
+const OptimizeCssAssetsWebpackPlugin = require("optimize-css-assets-webpack-plugin");
 const path = require("path");
 
 let htmlPageNames = [
@@ -64,6 +65,13 @@ module.exports = {
               name: "[path][name].[ext]?[hash:8]",
             },
           },
+
+          {
+            loader: "image-webpack-loader", // 壓縮圖片
+            options: {
+              bypassOnDebug: true,
+            },
+          },
         ],
       },
       {
@@ -83,6 +91,7 @@ module.exports = {
     new MiniCssExtractPlugin({
       filename: "index.[hash].css",
     }),
+    new OptimizeCssAssetsWebpackPlugin(),
     new CleanWebpackPlugin(),
     // new CompressionPlugin(),
   ].concat(multipleHtmlPlugins),
